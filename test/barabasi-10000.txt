@@ -1,0 +1,32 @@
+
+R version 2.10.1 (2009-12-14)
+Copyright (C) 2009 The R Foundation for Statistical Computing
+ISBN 3-900051-07-0
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> library(igraph)
+> 
+> input.file <- commandArgs()[1]
+> 
+> output.file <- sub('.txt', '', input.file)
+> 
+> output.file <- paste(output.file, "-pr-R.txt", sep="") 
+> 
+> g <- read.graph(input.file, format="ncol")
+Error in read.graph.ncol(file, ...) : 
+  At foreign.c:228 : Parse error in NCOL file, line 2 (syntax error), Parse error
+Calls: read.graph -> switch -> read.graph.ncol -> .Call
+Execution halted
