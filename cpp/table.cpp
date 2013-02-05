@@ -220,7 +220,7 @@ int Table::read_file(const string &filename) {
 
         linenum++;
         if (linenum && ((linenum % 100000) == 0)) {
-            cout << "read " << linenum << " lines, " 
+            cerr << "read " << linenum << " lines, "
                  << rows.size() << " vertices" << endl;
         }
 
@@ -229,7 +229,7 @@ int Table::read_file(const string &filename) {
         line.clear();
     }
 
-    cout << "read " << linenum << " lines, " 
+    cerr << "read " << linenum << " lines, "
          << rows.size() << " vertices" << endl;
 
     nodes_to_idx.clear();
@@ -444,5 +444,5 @@ const void Table::print_pagerank_v() {
         }
         sum += pr[i];
     }
-    cout << "s = " << sum << " " << endl;
+    cerr << "s = " << sum << " " << endl;
 }
