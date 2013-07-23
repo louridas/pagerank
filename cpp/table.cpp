@@ -53,7 +53,7 @@ void Table::reset() {
     pr.clear();
 }
 
-Table::Table(double a, double c, unsigned long i, bool t, bool n, string d)
+Table::Table(double a, double c, size_t i, bool t, bool n, string d)
     : trace(t),
       alpha(a),
       convergence(c),
