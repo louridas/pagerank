@@ -45,7 +45,7 @@ where OPTIONS may be:
    pre-allocated for better performance.
 
 * -d `<string>`: the delimited used to separate vector indices in the
-   input graph file. Default is " => ".
+   input graph file. Default is `" => "`.
 
 # Testing
 
