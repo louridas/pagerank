@@ -30,7 +30,7 @@ where OPTIONS may be:
    of lines of the form `<from><delim><to>` where `<from>` and `<to>` are
    integer vertex indices, starting with zero. If not set, the
    graph_file consists of lines of the form `<from><delim><to>` where
-   `<from>` and `<to>` and vertex IDs, and will be interpreted as strings.
+   `<from>` and `<to>` are vertex IDs that will be interpreted as strings.
 
 * -a `<float>`: the pagerank dumping factor; default is  0.85.
 
